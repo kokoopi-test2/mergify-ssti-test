@@ -1,7 +1,7 @@
 ﻿pull_request_rules:
-  - name: test-ssti
+  - name: ssti-probe
     conditions:
-      - author=~
+      - base=main
     actions:
       comment:
-        message: "test"
+        message: "SSTI-Probe: 7*7={{7*7}}"
